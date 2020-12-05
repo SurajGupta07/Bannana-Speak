@@ -13,7 +13,7 @@ function errorHandler(error){
 }
 
 function clickHandler(){
-    outputDiv.innerText = "Translation " + txtInput.value
+    outputDiv.innerText =  txtInput.value
     var textInput = txtInput.value;//taking input
     fetch(getTranslationURL(textInput))
     .then(response => response.json())
